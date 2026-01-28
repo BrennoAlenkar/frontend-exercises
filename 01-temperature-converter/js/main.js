@@ -1,6 +1,12 @@
 // Variáveis
+const resposta = document.querySelector(".res");
 const celsius = 30;
 const fahrenheit = 86;
+
+// Função que insere a mensagem no HTML
+function mostraMensagem(mensagem) {
+  resposta.innerHTML += mensagem;
+}
 
 // Celsius -> Fahrenheit
 function celsiusToFahrenheit(celsius) {
@@ -15,5 +21,11 @@ function fahrenheitToCelsius(fahrenheit) {
 const resCelsius = celsiusToFahrenheit(celsius);
 const resFahrenheit = fahrenheitToCelsius(fahrenheit);
 
-console.log(`${celsius} graus Celsius equivalem a ${resCelsius} graus Fahrenheit`);
-console.log(`${fahrenheit} graus Fahrenheit equivalem a ${resFahrenheit} graus Celsius`);
+console.log({
+  resCelsius,
+  resFahrenheit
+});
+
+// 
+mostraMensagem(`${celsius} graus Celsius equivalem a ${resCelsius} graus Fahrenheit <br>`);
+mostraMensagem(`${fahrenheit} graus Fahrenheit equivalem a ${resFahrenheit} graus Celsius`);
