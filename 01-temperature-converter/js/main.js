@@ -26,6 +26,6 @@ console.log({
   resFahrenheit
 });
 
-// 
+// Exibe os resultados das conversões na página
 mostraMensagem(`${celsius} graus Celsius equivalem a ${resCelsius} graus Fahrenheit <br>`);
 mostraMensagem(`${fahrenheit} graus Fahrenheit equivalem a ${resFahrenheit} graus Celsius`);
